@@ -1,0 +1,214 @@
+[
+  {
+    "id": "delete-user",
+    "uri": "features/specs/deleteUser.feature",
+    "keyword": "Feature",
+    "name": "Delete user",
+    "description": "    As an admin I want to delete a user",
+    "line": 1,
+    "elements": [
+      {
+        "id": "delete-user;delete-user",
+        "keyword": "Scenario",
+        "name": "Delete user",
+        "description": "",
+        "line": 6,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I delete a user",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/deleteUser_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 860250000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "see successful response to delete with code \"200\"",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/deleteUser_steps.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5035600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@delete",
+            "line": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "get-user",
+    "uri": "features/specs/getUser.feature",
+    "keyword": "Feature",
+    "name": "Get user",
+    "description": "    As an admin I want to get a user data by id",
+    "line": 1,
+    "elements": [
+      {
+        "id": "get-user;verify-userinfo",
+        "keyword": "Scenario",
+        "name": "Verify UserInfo",
+        "description": "",
+        "line": 6,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I make get request on the endpoint",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/getUser_steps.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 493004500
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "see \"200\" as StatusCode",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/getUser_steps.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84200
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I show the id and name",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/getUser_steps.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 404500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@get_users",
+            "line": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "create-new-user",
+    "uri": "features/specs/newUser.feature",
+    "keyword": "Feature",
+    "name": "Create new user",
+    "description": "    As an admin I want to create a new user",
+    "line": 1,
+    "elements": [
+      {
+        "id": "create-new-user;create-user",
+        "keyword": "Scenario",
+        "name": "Create user",
+        "description": "",
+        "line": 6,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I create a new user",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/newUser_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 712066800
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "see \"201\" as code response",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/newUser_steps.rb:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89300
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@create",
+            "line": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "update-a-user",
+    "uri": "features/specs/updateUser.feature",
+    "keyword": "Feature",
+    "name": "Update a user",
+    "description": "    As an admin I want to Update a user",
+    "line": 1,
+    "elements": [
+      {
+        "id": "update-a-user;update-user",
+        "keyword": "Scenario",
+        "name": "Update user",
+        "description": "",
+        "line": 6,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I make a request to update user info",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/updateUser_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 682246300
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "see successful response with code \"200\"",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/updateUser_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@update",
+            "line": 5
+          }
+        ]
+      }
+    ]
+  }
+]
